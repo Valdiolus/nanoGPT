@@ -13,4 +13,4 @@ with open('train_data.csv', 'r') as csv_file:
             txt_file.write(string+'\n')
         i+=1
 
-    print("Added %d string of text", i-1)
+    print("Added", i-1, "strings of text")
