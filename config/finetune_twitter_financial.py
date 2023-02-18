@@ -5,7 +5,7 @@ eval_interval = 5
 eval_iters = 40
 wandb_log = True # feel free to turn on
 wandb_project = 'twitter_financial'
-wandb_run_name = 'test4'
+wandb_run_name = 'test8'
 
 dataset = 'twitter_financial'
 init_from = 'gpt2-large' # this is the largest GPT-2 model
@@ -18,12 +18,12 @@ always_save_checkpoint = False
 # shakespeare has 301,966 tokens, so 1 epoch ~= 9.2 iters
 batch_size = 1
 gradient_accumulation_steps = 32
-max_iters = 1000
+max_iters = 2000
 
 # finetune at constant LR
 learning_rate = 1e-6
 decay_lr = True
-warmup_iters = 200
+warmup_iters = max_iters/10
 lr_decay_iters = max_iters 
 min_lr = learning_rate/10
 
